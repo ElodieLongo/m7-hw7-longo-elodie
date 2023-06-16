@@ -113,13 +113,12 @@ main p {
   margin-bottom: 48px;;
 }
 
-.dropcap: first-letter {
+.dropcap::first-letter {
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   float: left;
-  font-size: 20rem;
+  font-size: 10rem;
   line-height: 0.65;
-  margin: 0.1em 0.1em 0.2em 0;
-
+  margin: 0.1em 0.1em 0.1em 0;
 }
 
 main > article img {
@@ -155,15 +154,18 @@ span.tooltip:focus {
 /* show tooltip on hover/focus */
 span.tooltip:hover > span,
 span.tooltip:focus > span {
-  display: inline;
+  display: block;
 }
 
 /* styling for tooltip bubble */
 span.tooltip span {
   display: none;
-}
-
-/* styling for tooltip bubble arrow */
-span.tooltip span::after {
-  content: "";
+  color: white;
+  background: #074c50;
+  position: absolute;
+  bottom: 30px;
+  max-width: 250px;
+  left: 0;
+  padding: 15px;
+  font-size: small;
 }
