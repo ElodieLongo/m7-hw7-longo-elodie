@@ -170,7 +170,6 @@ span.tooltip span {
   padding: 15px;
   font-size: small;
 }
-<<<<<<< HEAD
 
 span.tooltip span::after {
   content: " ";
@@ -182,5 +181,3 @@ span.tooltip span::after {
   border-style: solid;
   border-color: #074c50 transparent transparent transparent;
 }
-=======
->>>>>>> 0ad951bdabed0fa85d5cd63d6ed0c58c7df7aaca
